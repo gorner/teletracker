@@ -1,0 +1,18 @@
+<table id="shows-table">
+  <thead>
+    <tr>
+      <td>Title</td>
+      <td>Started</td>
+      <td>Seasons</td>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each content}}
+    <tr>
+      <td>{{#linkTo shows.show this}}{{name}}{{/linkTo}}</td>
+      <td>{{started}}</td>
+      <td>{{seasons}}</td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
