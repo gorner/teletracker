@@ -1,3 +1,9 @@
+*Teletracker 0.0.2 (June 13, 2013)*
+
+* Switched over to Ember Data (already?!) with fixtures
+* "Show" model renamed "Program" to avoid any possibility of confusion / conflicts with "show" routes
+* Added (very basic) episodes display
+
 *Teletracker 0.0.1 (June 10, 2013)*
 
 * Initial commit with very basic display of show information using hardcoded data.
