@@ -8,6 +8,8 @@
   <dd>{{seasons}}</dd>
   <dt>Country</dt>
   <dd>{{country}}</dd>
+  <dt>Watched</dt>
+  <dd>{{watchedPercent}}%</dd>
 </dl>
 
 <table id="episodes-table">
@@ -18,16 +20,17 @@
       <td>Total Number</td>
       <td>Title</td>
       <td>Airdate</td>
-    </tr>
+      <td>Watched</td>
   </thead>
   <tbody>
     {{#each episodes}}
     <tr>
-      <td>{{season_number}}</td>
-      <td>{{episode_number}}</td>
-      <td>{{total_number}}</td>
-      <td>{{title}}</td>
+      <td>{{seasonNumber}}</td>
+      <td>{{episodeNumber}}</td>
+      <td>{{totalNumber}}</td>
+      <td>{{#linkTo episodes.show this}}{{title}}{{/linkTo}}</td>
       <td>{{airdate}}</td>
+      <td>{{view Ember.Checkbox checkedBinding="watched"}}</td>
     </tr>
     {{/each}}
   </tbody>

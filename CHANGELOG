@@ -1,3 +1,9 @@
+*Teletracker 0.0.3 (July 30, 2013)*
+
+* Add separate per-episode display page
+* Basic episode queueing now available, though de-queueing an episode causes some problems (not clear if it's on my end or ember-data's)
+* Various other _minor_ fixes
+
 *Teletracker 0.0.2 (June 13, 2013)*
 
 * Switched over to Ember Data (already?!) with fixtures

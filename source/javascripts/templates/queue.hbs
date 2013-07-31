@@ -1,0 +1,24 @@
+<table id="queued-episodes-table">
+  <thead>
+    <tr>
+      <td>Series</td>
+      <td>Season</td>
+      <td>Number</td>
+      <td>Title</td>
+      <td>Airdate</td>
+      <td>Watched</td>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each content}}
+    <tr>
+      <td>{{episode.program.name}}</td>
+      <td>{{episode.seasonNumber}}</td>
+      <td>{{episode.episodeNumber}}</td>
+      <td>{{#linkTo episodes.show episode}}{{episode.title}}{{/linkTo}}</td>
+      <td>{{episode.airdate}}</td>
+      <td>{{view Ember.Checkbox checkedBinding="episode.watched"}}</td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
